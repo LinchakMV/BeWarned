@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Service directory</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <script src="https://use.fontawesome.com/67dfbbbb80.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/style.css" />
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/main.js"></script>        
+    </head>
+    <body>
+        
+
+<!-- HEADER -->
+        <header>
+            <nav class="navbar content">
+                <div class="navbar-header">
+                     <div class="logo">
+                        <a href="#">
+                            <img src="./img/Danteez.png" alt="Danteez" width="130">
+                        </a>
+                    </div>
+                    <div class="input-group">
+                         <form name="SearchForm">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                            <input type="text" name="" value="" placeholder="Company Name">
+                            <!--<button type="">Search</button>-->
+                        </form>
+                    </div>
+                    <div class="navbar-right">
+                        <div class="chat">
+                            <img src="./img/chat.png" alt="">
+                        </div>
+                        <div class="alarm">
+                            <img src="./img/ring.png" alt="">
+                        </div>
+                        <div class="user">
+                            <img src="./img/user-default.png" alt="" width="40px" height="40px">
+                            <p>Maximillian Beekeeper</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </nav>                        
+        </header>
+<!-- /HEADER -->
+<!-- CONTENT -->
+            <div id="content">
+        <!-- LEFT -->
+                <div class="left">
+                    <div class="main-menu">
+                        <ul>
+                            <li><a href="#"><img src="./img/leftm1.png" alt=""><span>Feed</span></a></li>
+                            <li><a href="#"><img src="./img/leftm2.png" alt=""><span>Ask a Colleague</span></a></li>
+                            <li><a href="#"><img src="./img/leftm3.png" alt=""><span>Companies</span></a></li>
+                            <li><a href="#"><img src="./img/leftm4.png" alt=""><span>Service Directory</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="advertisement">
+                        <p>Advertisement</p>
+                        <a href="#">
+                            <img src="./img/left-stars.png" alt="">
+                            <p>Ads By Denteez.com</p>
+                        </a>
+                    </div>
+                    <div class="companies">
+                        <div>
+                            <span>Featured Companies</span>
+                            <a href="#">See All</a>
+                        </div>
+                        <div class="company-ch">
+                            <img src="./img/left-1.png" alt="" width="83" height="83">
+                            <div>    
+                                <span class="company-name">Company Name</span>
+                                <span class="company-e">Manufacturer</span>
+                                <span class="country">Belgrade, Serbia</span>
+                                <p><a href="#">Follow Now</a></p>
+                            </div>
+                        </div>
+                        <div class="company-ch">
+                            <img src="./img/left-2.png" alt="" width="83" height="83">
+                            <div>    
+                                <span class="company-name">Company Name</span>
+                                <span class="company-e">Service Provider</span>
+                                <span class="country">New York, USA</span>
+                                <p><a href="#">Follow Now</a></p>
+                            </div>
+                        </div>
+                        <div class="company-ch">
+                            <img src="./img/left-3.png" alt="" width="83" height="83">
+                            <div>
+                                <span class="company-name">Company Name</span>
+                                <span class="company-e">Supplier</span>
+                                <span class="country">London, England</span>
+                                <p><a href="#">Follow Now</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="copyright">
+                        <span>Denteez Copyright 2015</span>
+                        <p><a href="#">Terms of use</a><a href="#">Privacy Policy</a></p>
+                    </div>
+                </div>
+        <!-- CENTER -->
+                <div class="center">
+                    <div class="add-new">
+                        <h2>Service Directory</h2>
+                        <button>Add New Service</button>
+                    </div>                    
+                    <div class="center-content">
+                        <!--MODAL-->
+                        <div id="myModal" class="modal fade" tabindex="-1" role="dialog">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header"><button class="close" type="button" data-dismiss="modal">×</button>
+                                        <h4 class="modal-title">Error</h4>
+                                    </div>
+                                    <div class="modal-body error_one hide">401:Unauthorized, please authorized</div>
+                                    <div class="modal-body error_two hide">500:Internal Server Error</div>
+                                    <div class="modal-footer"><button class="btn btn-default" type="button" data-dismiss="modal">Закрыть</button></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--MODAL-->
+                        <!--LOADER-->
+                          <div id="fountainG" class="loader">
+                            <div id="fountainG_1" class="fountainG"></div>
+                            <div id="fountainG_2" class="fountainG"></div>
+                            <div id="fountainG_3" class="fountainG"></div>
+                            <div id="fountainG_4" class="fountainG"></div>
+                            <div id="fountainG_5" class="fountainG"></div>
+                            <div id="fountainG_6" class="fountainG"></div>
+                            <div id="fountainG_7" class="fountainG"></div>
+                            <div id="fountainG_8" class="fountainG"></div>
+                        </div> 
+                        <!--/LOADER-->
+                        
+                    </div>
+                </div>
+        <!-- RIGHT -->
+                <div class="right">
+                    <div class="people-know">
+                        <div class="people">
+                            <span>People you may know</span>
+                            <a href="#">See All</a>
+                        </div>
+                        <div>
+                            <h4>Dennis Adams</h4>
+                            <div class="people-ch">
+                                <img src="./img/right1.png" alt="" width="81px" height="81px">
+                                <div>    
+                                    <span>Dentist (Practice Owner)</span>
+                                    <p>London, England</p>
+                                    <a href="#">Add Friend</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h4>Mary Carpenter</h4>
+                            <div class="people-ch">
+                                <img src="./img/right2.png" alt="" width="81px" height="81px">
+                                <div>
+                                    <span>Dentist (Practice Owner)</span>
+                                    <p>Belgrade, Serbia</p>
+                                    <a href="#">Add Friend</a>
+                                </div>    
+                            </div>
+                        </div>
+                        <div>
+                            <h4>Danielle Salazar</h4>
+                            <div class="people-ch">
+                                <img src="./img/right3.png" alt="" width="81px" height="81px">
+                                <div>
+                                    <span>Dentist (Practice Owner)</span>
+                                    <p>Paris, France</p>
+                                    <a href="#">Add Friend</a>
+                                </div>    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured">
+                        <div class="f-products">
+                            <span>Featured Products</span>
+                            <a href="#">See All</a>
+                        </div>
+                        <div class="product">
+                            <h4>Product Name</h4>
+                            <div>
+                                <img src="./img/right4.png" alt="" width="83" height="83">
+                                <span>
+                                    <p>Product Short Description.</p>
+                                    <p>The quick brown fox jumps over the lazy dog.</p>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <h4>Product Name</h4>
+                            <div>
+                                <img src="./img/right5.png" alt="" width="83" height="83">
+                                <span>    
+                                    <p>Product Short Description.</p>
+                                    <p>The quick brown fox jumps over the lazy dog.</p>
+                                </span>
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="advertisement">
+                        <p>Advertisement</p>
+                        <a href="#">
+                            <img src="./img/right6.png" alt="">
+                            <p>Ads By Denteez.com</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+<!-- /CONTENT -->
+    </body>
+</html>
